@@ -11,7 +11,7 @@ export class RecipeListComponent implements OnInit {
 
   @Output() recipeSelected = new EventEmitter<Recipe>();
 
-  recipe = new Recipe('Dummy Recipe', 'This is a custom dummy Element in order to test', 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Hotdog.PNG/220px-Hotdog.PNG');
+  recipe = new Recipe('Dummy Recipe', 'This is a custom dummy recipe!', 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Hotdog.PNG/220px-Hotdog.PNG');
 
   constructor() {
   }
