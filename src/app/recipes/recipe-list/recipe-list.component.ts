@@ -7,11 +7,14 @@ import {Recipe} from "../recipe";
 })
 export class RecipeListComponent implements OnInit {
 
-  recipes: Recipe[] = [];
+  recipes: Recipe[] = [
+
+    new Recipe('Lasagne', 'Very easy', 'http://static.chefkoch-cdn.de/ck.de/rezepte/111/111218/844294-960x720-lasagne-bolognese.jpg', []),
+    new Recipe('Salad', 'Healthy' , 'https://www.wagamama.com/-/media/WagamamaMainsite/hero-pod-images/salads.jpg', [])
+
+  ];
 
   @Output() recipeSelected = new EventEmitter<Recipe>();
-
-  recipe = new Recipe('Dummy Recipe', 'This is a custom dummy recipe!', 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Hotdog.PNG/220px-Hotdog.PNG');
 
   constructor() {
   }
