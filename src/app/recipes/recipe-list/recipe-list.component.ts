@@ -27,7 +27,6 @@ export class RecipeListComponent implements OnInit {
 
     this.recipeSelected.emit(recipe);
 
-
   }
 
 }
